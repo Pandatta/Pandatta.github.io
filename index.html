@@ -189,15 +189,19 @@
 
       <form action="https://formsubmit.co/e4503c0d529017a7c22b050fff318a1e" method="POST" >
         <div class="input-box">
+          <label for = "fullname" class="form-label">Full Name</label>
           <input type="text" class = "form-control" name = "Full name" id = "Full Name">
+          <label for="emailinfo" class="form-label">E-mail</label>
           <input type="email" class = "form-control" name="email" id="Email Address">
         </div>
 
         <div class="input-box">
+          <label for="phonenumber" class="form-label">Phone Number</label>
           <input type="number" class = "form-control" name = "Phone Number" id= "Mobile Phone Number">
-          <input type="hidden" class = "form-control" name="_subject" value="New submission!">
+          <label for="emailsubject" class="form-label">Email Subject</label>
+          <input type="text" class = "form-control" name="_subject" value="New submission!">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea class="form-control" name="Your Message" id="Message" cols="30" rows="10" ></textarea>
         <input type="submit" value="Send Message" class="btn">
       </form>
     </section>
