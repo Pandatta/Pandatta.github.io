@@ -233,8 +233,15 @@ span {
     margin: 1rem 0 3rem;
 }
 
+.skills a {
+    margin-bottom: 2rem;
+}
+
 .portfolio {
     background: var(--second-bg-color);
+    background-size: auto 100%;
+    background-size: cover;
+    background-size: contain;
 }
 
 .portfolio h2{
@@ -502,6 +509,10 @@ span {
 }
 
 @media (max-width: 617px) {
+    #menu.icon {
+        position: relative;
+        width: 100%;
+    }
     .portfolio-container{
         grid-template-columns: 1fr;
     }
@@ -516,12 +527,30 @@ span {
 }
 
 @media (max-width: 450px){
+
+    #menu.icon {
+        position: relative;
+        left: auto;
+    }
+
     html {
         font-size: 50%;
     }
 
     .contact form .input-box input {
         width: 100%;
+    }
+
+    .portfolio-box h4 {
+        font-size: 2rem;
+    }
+
+    .portfolio-container .portfolio-layer {
+        background: linear-gradient(rgba(0, .4, .4, .9), var(--main-color));
+    }
+
+    .portfolio-box p {
+        font-size: 1rem;
     }
 
     .home-img img {
@@ -534,14 +563,27 @@ span {
 }
 
 @media (max-width: 365px) {
+
+    #menu.icon {
+        position: relative;
+        width: 100%;
+    }
+
     .home-img img {
         width: 90vw;
+    }
+
+    .about {
+        background-size: auto 100%;
     }
     
     .about-img img{
         width: auto;
     }
 
+    .portfolio-box a {
+        font-size: smaller;
+    }
     .footer{
         flex-direction: column-reverse;
     }
