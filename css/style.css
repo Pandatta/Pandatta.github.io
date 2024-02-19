@@ -199,6 +199,9 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.about-content a{
+    margin-right: 2rem;
+}
 .skills h2{
     margin-bottom: 5rem;
 }
