@@ -12,6 +12,7 @@ menuIcon.onclick = () => {
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
+// This is used for the scroll event and assign the active class to the navbar link
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -42,18 +43,20 @@ window.onscroll = () => {
 
 
 /*==================== scroll reveal ====================*/
-ScrollReveal({
-    //reset: true,
+
+ScrollReveal ({
+    reset: true,
     distance: '80px',
     duration: 2000,
-    delay: 200
+    delay: 450
 
 });
 
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
 ScrollReveal().reveal('.home-img, .skills-container, .portfolio-box, .contact-box',{ origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img', { origin : 'left'});
+ScrollReveal().reveal('.home-content h1, .about-img', { origin : 'ease-in-out'});
 ScrollReveal().reveal('.home-content p, .about-content', { origin : 'right'});
+
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {
     strings: ['Programmer', 'student in University Of Waterloo', 'Data Scientist', 'Hard-Working'],
@@ -62,4 +65,3 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
-
