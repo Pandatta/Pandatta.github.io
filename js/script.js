@@ -15,16 +15,15 @@ window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 200;
-        let height = sec.offsetHeight;
+        let each_sec_height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height){
+        if (top >= offset && top < offset + each_sec_height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
         };
-
     });
 
     /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
@@ -33,13 +32,11 @@ window.onscroll = () => {
 
 
 /*==================== scroll reveal ====================*/
-
 ScrollReveal ({
     reset: true,
     distance: '80px',
     duration: 2000,
     delay: 450
-
 });
 
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
