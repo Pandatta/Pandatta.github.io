@@ -43,7 +43,9 @@ window.onscroll = () => {
         } ;
     });
 
+    
     // remove active of the navbar
+    menu.classList.remove('bx-x-circle');
     navbar.classList.remove('active');
 };
 
