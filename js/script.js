@@ -4,7 +4,7 @@ let menu = document.querySelector('#menu-icon');
 // select the element by its "class"
 let navbar = document.querySelector('.navbar');
 
-// changing when the icon get clicked by users
+// changing status when the icon get clicked by users
 menu.onclick = () => {
     menu.classList.toggle('bx-x-circle');
     navbar.classList.toggle('active');
@@ -40,7 +40,7 @@ window.onscroll = () => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
-        } ;
+        };
     });
 
     
