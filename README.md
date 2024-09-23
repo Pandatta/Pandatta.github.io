@@ -1,4 +1,4 @@
 # Personal Website
 
-Welcome to my [personal website](pandatta.github.io) ‼
+Welcome to my [personal website](https://pandatta.github.io) ‼
 
