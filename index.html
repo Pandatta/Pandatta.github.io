@@ -8,6 +8,9 @@
 
     <!-- box icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    
+    <!-- devicons for programming languages and tools -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
@@ -27,7 +30,6 @@
         <a href = "#home" class="active"><i class='bx bxs-home' ></i></a>
         <a href = "#about">About</a>
         <a href = "#skills">Skills</a>
-        <a href = "#portfolio">Portfolio</a>
         <a href = "#contact"><i class='bx bxs-contact' ></i></a>
       </nav>
     </header>
@@ -60,153 +62,199 @@
     <!-- about section design -->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="https://github.com/Pandatta/Pandatta/blob/main/Pic.jpg?raw=true" alt="">
+        <img src="images/personal.jpg" alt="Hong Ta Chen">
       </div>
 
       <div class="about-content">
-        <h2 class="heading">About<span> Me</span></h2>
-        <h3>Dream In <span>Web Development/AI/Robotics!!</span> </h3>
-        <p>👋 I'm a self-driven web developer with hands-on experience leading full-stack projects, managing timelines, and delivering business-focused digital solutions. </p>
-        <p>💼 In addition to my technical work, I actively help manage operations for my family's business, strengthening my skills in leadership, strategy, and aligning technology with real-world business needs.</p>
-        <p>🎯 I specialize in creating scalable websites, integrating backend systems (like Firebase and Google Sheets), optimizing SEO, and collaborating with business leaders to drive growth.</p>
-        <p>🌍 Outside of work, I stay active through fitness, enjoy discovering great food, and love traveling to new places around the world.</p>
-        <a href="#portfolio" class="btn">My Projects</a>
-        <a href="https://codanh.com/en" class="btn">Need a high-quality custom ventilation system!?</a>
-        
-        
+        <h3>Data-driven builder with an entrepreneurial mindset and practical experience in web, AI, and data technologies.</h3>
+        <div class="btn-container">
+          <a href="https://github.com/Pandatta" class="btn" target="_blank" rel="noopener noreferrer">My Projects</a>
+          <a href="https://codanh.com/en" class="btn">High Quality Centrifugal Fan!?</a>
+        </div>
       </div>
     </section>
 
     <!-- skills section design -->
-
     <section class="skills" id="skills">
-        <h2 class="heading">Personal <span>Skills</span></h2>
+        <h2 class="heading"><span>Skills</span></h2>
 
-        <div class="skills-container">
-          <style>
-            li {
-                font-size: 14px;
-            }
-          </style>
-          <div class="skills-box">
-            <i class='bx bxl-python' ></i>
-            <h3>Python</h3>
-            <p style="text-align: center;">
-              <li>Applying deep learning frameworks with Python to <span>Jetson Orin Nano Robot Arm</span></li>
-              <li>Solved a math challenge from IBM</li>
-              <li>Earn PCEP certificate from Python Institute</li>
-            </p>
-            
-                
-            <a href="https://research.ibm.com/haifa/ponderthis/challenges/May2022.html" class="btn">Ibm Challenge I solved!!</a>
-            <a href="https://drive.google.com/file/d/1Hgaym0rOXe3rKHaUUpqq_wLQwNo4P_gX/view?usp=sharing" class="btn">Pcep Certification!!</a>
-            
-           </div>
-           
-           <div class="skills-box">
-            <i class='bx bxl-java' ></i>
-            <i class='bx bxl-javascript' ></i>
-            <h3>Java/JavaScript</h3>
-            <p style="text-align: center;">
-              <li>Developed a AQI website in Hack the valley 8 hackathon</li>
-              <li>Building a blog about "Fitness content VS Networked teens"</li>
-            </p>
-
-            <a href="https://engl108d-ta.netlify.app/" class="btn">Fitness V.S. Teen's Blog</a>
-            <a href="https://pandatta.github.io/Hackthevalley8---AQI-/" class="btn">AQI Website</a>
-           </div>
-
-           <div class="skills-box">
-            <i class='bx bxl-html5' ></i>
-            <i class='bx bxl-css3' ></i>
-            <h3>HTML/CSS</h3>
-            <p style="text-align: center;">
-              <li>Developed a <span>Responsive Personal Website</span></li>
-            </p>
-            
-            <a href="https://github.com/Pandatta/Personal_Web" class="btn">First Web Dev Project!</a>
-           </div>
-           <!-- <div class="skills-box">
-            <i class='bx bxl-C' ></i>
-            <i class="fa-solid fa-c"></i>
-            <h3>C-Programming</h3>
-            <p>Experienced with C with 0.5 year,
-               specializing in applying mathematical principles to coding.
-                Pursuing Bachelor's in Mathematics from the University of Waterloo
-                , I have done certificate of <span>C-Programming in UDEMY</span> and a course of elementary design and abtract data structure using C.</p>
-            <a href="https://drive.google.com/file/d/1G4Xhdmi21wwLlKWYYR4S1SUsktB-3Mk-/view?usp=sharing" class="btn">Certificate</a>
-           </div> -->
+        <!-- Programming Languages -->
+        <div class="skills-category">
+            <h3 class="skills-category-title">Programming Languages</h3>
+            <div class="skills-grid">
+                <div class="skill-icon" title="Python">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-icon" title="R">
+                    <i class="devicon-r-plain colored"></i>
+                    <span>R</span>
+                </div>
+                <div class="skill-icon" title="SQL">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="skill-icon" title="HTML">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-icon" title="CSS">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-icon" title="JavaScript">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-icon" title="TypeScript">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <span>TypeScript</span>
+                </div>
+                <div class="skill-icon" title="C">
+                    <i class="devicon-c-plain colored"></i>
+                    <span>C</span>
+                </div>
+                <div class="skill-icon" title="Visual Basic">
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <span>Visual Basic</span>
+                </div>
+            </div>
         </div>
-    </section>
-    
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfolio-container">
 
-          <div class="portfolio-box">
-            <img src="images/portfolio1.jpg" alt="">
-            <div class="portfolio-layer">
-              <h4>Web Design</h4>
-              <p>
-                I built a responsive portfolio website using HTML, CSS, and JavaScript.
-              </p>
-              <a href="https://github.com/Pandatta/Pandatta.github.io"><i class='bx bx-link-external' ></i></a>
+        <!-- Frameworks & Libraries -->
+        <div class="skills-category">
+            <h3 class="skills-category-title">Frameworks & Libraries</h3>
+            <div class="skills-grid">
+                <div class="skill-icon" title="ReactJS">
+                    <i class="devicon-react-original colored"></i>
+                    <span>ReactJS</span>
+                </div>
+                <div class="skill-icon" title="Next.js">
+                    <i class="devicon-nextjs-plain colored"></i>
+                    <span>Next.js</span>
+                </div>
+                <div class="skill-icon" title="LangChain">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>LangChain</span>
+                </div>
+                <div class="skill-icon" title="FAISS">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>FAISS</span>
+                </div>
+                <div class="skill-icon" title="Node.js">
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-icon" title="Tailwind CSS">
+                    <i class="devicon-tailwindcss-plain colored"></i>
+                    <span>Tailwind CSS</span>
+                </div>
+                <div class="skill-icon" title="AWS">
+                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                    <span>AWS</span>
+                </div>
             </div>
-          </div>
+        </div>
 
-          <div class="portfolio-box">
-            <img src="images/portfolio2.jpg" alt="">
-            <div class="portfolio-layer">
-              <h4>Real-Time Stock Analysis 
-                with Kafka</h4>
-              <p> Using Python, AWS, Apache Kafka, Glue, and Athena End-To-End Data Engineering Project focused on Real-Time Stock Market Data. 
-              </p>
-              <a href="https://drive.google.com/file/d/1Z4j7o9SUCBCQqV8gBpJHjynE6cP7vdz3/view?usp=sharing"><i class='bx bx-link-external' ></i></a>
+        <!-- Tools & Platforms -->
+        <div class="skills-category">
+            <h3 class="skills-category-title">Tools & Platforms</h3>
+            <div class="skills-grid">
+                <div class="skill-icon" title="Git">
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-icon" title="GitHub">
+                    <i class="devicon-github-original colored"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-icon" title="Vim">
+                    <i class="devicon-vim-plain colored"></i>
+                    <span>Vim</span>
+                </div>
+                <div class="skill-icon" title="WordPress">
+                    <i class="devicon-wordpress-plain colored"></i>
+                    <span>WordPress</span>
+                </div>
+                <div class="skill-icon" title="Google Analytics">
+                    <img src="https://img.icons8.com/color/96/google-analytics.png" alt="Google Analytics" class="skill-icon-img" />
+                    <span>Google Analytics</span>
+                </div>
+                <div class="skill-icon" title="Google Ads">
+                    <img src="https://img.icons8.com/color/96/google-ads.png" alt="Google Ads" class="skill-icon-img" />
+                    <span>Google Ads</span>
+                </div>
+                <div class="skill-icon" title="Google Trends">
+                    <i class="devicon-google-plain colored"></i>
+                    <span>Google Trends</span>
+                </div>
+                <div class="skill-icon" title="Firebase">
+                    <i class="devicon-firebase-plain colored"></i>
+                    <span>Firebase</span>
+                </div>
+                <div class="skill-icon" title="Supabase">
+                    <img src="https://img.icons8.com/color/96/supabase.png" alt="Supabase" class="skill-icon-img" />
+                    <span>Supabase</span>
+                </div>
+                <div class="skill-icon" title="Power BI">
+                    <img src="https://img.icons8.com/color/96/power-bi.png" alt="Power BI" class="skill-icon-img" />
+                    <span>Power BI</span>
+                </div>
             </div>
-          </div>
-
-          <div class="portfolio-box">
-            <img src="images/portfolio3.jpg" alt="">
-            <div class="portfolio-layer">
-              <h4>Voice Assistance With PYTHON</h4>
-              <p>Created a desktop assistant with features like real-time date and time updates, YouTube video playback, and Wikipedia searches.
-              </p>
-              <a href="https://github.com/Pandatta/VoiceAssistancewith-PY"><i class='bx bx-link-external' ></i></a>
-            </div>
-          </div>
         </div>
     </section>
 
     <!-- contact section design -->
     <section class="contact" id="contact">
-      <h2 class="heading">Contact/Hire <span>Ta!</span></h2>
+      <div style="position: relative; z-index: 1;">
+        <h2 class="heading">Contact <span>Ta!</span></h2>
 
-      <form action="https://formsubmit.co/pandachen2005@gmail.com" method="POST" >
+        <form action="https://formsubmit.co/pandachen2005@gmail.com" method="POST" id="contact-form">
 
         <input type="text" name="_honey" style="display:none">
 
         <input type="hidden" name="_captcha" value="false">
 
-        <input type = "hidden" name="_next" value="https://pandatta.github.io/success.html">
+        <input type="hidden" name="_next" id="success-url" value="">
+        
+        <input type="hidden" name="_error" id="error-url" value="">
 
         <div class="input-box">
-          <label for = "fullname" class="form-label">Full Name</label>
-          <input type="text" class = "form-control" name = "Full name" id = "Full Name">
-          <label for="emailinfo" class="form-label">E-mail</label>
-          <input type="email" class = "form-control" name="email" id="Email Address">
-        </div>
+          <div class="input-wrapper">
+            <label for="fullname" class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" class="form-control" name="Full name" id="fullname" required minlength="2" maxlength="100">
+            <span class="error-message" id="fullname-error"></span>
+      </div>
+          <div class="input-wrapper">
+            <label for="emailinfo" class="form-label">E-mail <span class="required">*</span></label>
+            <input type="email" class="form-control" name="email" id="emailinfo" required>
+            <span class="error-message" id="emailinfo-error"></span>
+      </div>
+    </div>
 
         <div class="input-box">
-          <label for="phonenumber" class="form-label">Phone Number</label>
-          <input type="number" class = "form-control" name = "Phone Number" id= "Mobile Phone Number">
-          <label for="emailsubject" class="form-label">Email Subject</label>
-          <input type="text" class = "form-control" name="_subject" value="New submission!">
-        </div>
-        <label for="emailsubject" class="form-label">Your Message</label>
-        <textarea class="form-control" name="Your Message" id="Message" cols="30" rows="10" ></textarea>
-        <input type="submit" value="Send Message" class="btn">
-      </form>
+          <div class="input-wrapper">
+            <label for="phonenumber" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" name="Phone Number" id="phonenumber" maxlength="20" pattern="[0-9+\-\s()]+">
+            <span class="error-message" id="phonenumber-error"></span>
+      </div>
+          <div class="input-wrapper">
+            <label for="emailsubject" class="form-label">Email Subject</label>
+            <input type="text" class="form-control" name="_subject" id="emailsubject" value="New submission!" maxlength="200">
+            <span class="error-message" id="emailsubject-error"></span>
+      </div>
+    </div>
+        <div class="input-wrapper textarea-wrapper">
+          <label for="message" class="form-label">Your Message <span class="required">*</span></label>
+          <textarea class="form-control" name="Your Message" id="message" cols="30" rows="10" required minlength="10" maxlength="2000"></textarea>
+          <span class="error-message" id="message-error"></span>
+          <span class="char-count" id="message-count">0 / 2000 characters</span>
+  </div>
+        <div id="contact-challenge" style="margin: 1.5rem 0; display: flex; justify-content: center;" aria-live="polite"></div>
+        <div id="form-error" class="form-error-message" style="display: none;"></div>
+        <input type="submit" value="Send Message" class="btn" id="contact-submit-btn">
+        </form>
+      </div>
     </section>
     <!-- footer design -->
     <footer class="footer">
@@ -225,7 +273,318 @@
      <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- Turnstile for bot protection -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad" async defer></script>
+
     <!-- custom js -->
-    <script src="js/script.js"></script>  
+    <script src="js/script.js"></script>
+    
+    <!-- Turnstile Integration and Form Validation -->
+    <script>
+      (function() {
+        'use strict';
+        
+        // Configuration
+        const TURNSTILE_SITE_KEY = '0x4AAAAAAB9_nNAM0mbLP_Jg';
+        let contactChallengeToken = null;
+        let isContactSubmitting = false;
+        const contactChallengeDiv = document.getElementById('contact-challenge');
+        const contactForm = document.getElementById('contact-form');
+        const contactSubmitBtn = document.getElementById('contact-submit-btn');
+        
+        // Set form redirect URLs dynamically based on current origin
+        (function() {
+          const baseUrl = window.location.origin;
+          const successUrlInput = document.getElementById('success-url');
+          const errorUrlInput = document.getElementById('error-url');
+          if (successUrlInput) {
+            successUrlInput.value = baseUrl + '/success.html';
+          }
+          if (errorUrlInput) {
+            errorUrlInput.value = baseUrl + '/failure.html';
+          }
+        })();
+        
+        // Render Turnstile for Contact Form (only once)
+        let turnstileRendered = false;
+        function renderContactTurnstile() {
+          // Prevent duplicate rendering
+          if (turnstileRendered) {
+            return;
+          }
+          
+          if (typeof turnstile === 'undefined') {
+            setTimeout(renderContactTurnstile, 500);
+            return;
+          }
+          
+          if (contactChallengeDiv && !turnstileRendered) {
+            try {
+              turnstile.render('#contact-challenge', {
+                sitekey: TURNSTILE_SITE_KEY,
+                callback: function(token) {
+                  contactChallengeToken = token;
+                  console.log('Contact form Turnstile verification successful');
+                  // Add token to form as hidden input
+                  let tokenInput = document.getElementById('turnstile-token');
+                  if (!tokenInput) {
+                    tokenInput = document.createElement('input');
+                    tokenInput.type = 'hidden';
+                    tokenInput.id = 'turnstile-token';
+                    tokenInput.name = 'turnstile-token';
+                    contactForm.appendChild(tokenInput);
+                  }
+                  tokenInput.value = token;
+                },
+                'error-callback': function() {
+                  console.error('Contact form Turnstile widget error');
+                  contactChallengeToken = null;
+                },
+                'expired-callback': function() {
+                  contactChallengeToken = null;
+                  console.log('Contact form Turnstile token expired');
+                  turnstile.reset('#contact-challenge');
+                },
+                theme: 'dark',
+                size: 'normal'
+              });
+              turnstileRendered = true;
+            } catch (error) {
+              console.error('Failed to render Contact Turnstile:', error);
+            }
+          }
+        }
+        
+        // Turnstile callbacks - initialize when script loads
+        window.onTurnstileLoad = function() {
+          console.log('Turnstile script loaded');
+          renderContactTurnstile();
+        };
+        
+        // Fallback: Initialize Turnstile when DOM is ready (if script already loaded)
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(renderContactTurnstile, 100);
+          });
+        } else {
+          setTimeout(renderContactTurnstile, 100);
+        }
+        
+        // Contact Form Validation and Submission Handler
+        if (contactForm) {
+          const formError = document.getElementById('form-error');
+          const fullnameInput = document.getElementById('fullname');
+          const emailInput = document.getElementById('emailinfo');
+          const phoneInput = document.getElementById('phonenumber');
+          const subjectInput = document.getElementById('emailsubject');
+          const messageInput = document.getElementById('message');
+          const messageCount = document.getElementById('message-count');
+          
+          // Character counter for message
+          if (messageInput && messageCount) {
+            messageInput.addEventListener('input', function() {
+              const length = this.value.length;
+              messageCount.textContent = length + ' / 2000 characters';
+              if (length > 2000) {
+                messageCount.style.color = '#ff4444';
+              } else if (length > 1800) {
+                messageCount.style.color = '#ffaa00';
+              } else {
+                messageCount.style.color = 'rgba(255, 255, 255, 0.6)';
+              }
+            });
+          }
+          
+          // Clear error on input
+          [fullnameInput, emailInput, phoneInput, subjectInput, messageInput].forEach(function(input) {
+            if (input) {
+              input.addEventListener('input', function() {
+                const errorElement = document.getElementById(this.id + '-error');
+                if (errorElement) {
+                  errorElement.textContent = '';
+                  errorElement.style.display = 'none';
+                }
+                this.classList.remove('error');
+              });
+            }
+          });
+          
+          // Validation functions
+          function validateFullName() {
+            const value = fullnameInput.value.trim();
+            if (!value) {
+              showFieldError('fullname', 'Full name is required');
+              return false;
+            }
+            if (value.length < 2) {
+              showFieldError('fullname', 'Full name must be at least 2 characters');
+              return false;
+            }
+            if (value.length > 100) {
+              showFieldError('fullname', 'Full name must be less than 100 characters');
+              return false;
+            }
+            clearFieldError('fullname');
+            return true;
+          }
+          
+          function validateEmail() {
+            const value = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!value) {
+              showFieldError('emailinfo', 'Email is required');
+              return false;
+            }
+            if (!emailRegex.test(value)) {
+              showFieldError('emailinfo', 'Please enter a valid email address');
+              return false;
+            }
+            clearFieldError('emailinfo');
+            return true;
+          }
+          
+          function validatePhone() {
+            const value = phoneInput.value.trim();
+            if (!value) {
+              clearFieldError('phonenumber');
+              return true; // Phone is optional
+            }
+            const phoneRegex = /^[0-9+\-\s()]+$/;
+            if (!phoneRegex.test(value)) {
+              showFieldError('phonenumber', 'Please enter a valid phone number');
+              return false;
+            }
+            if (value.length < 7 || value.length > 20) {
+              showFieldError('phonenumber', 'Phone number must be between 7 and 20 characters');
+              return false;
+            }
+            clearFieldError('phonenumber');
+            return true;
+          }
+          
+          function validateSubject() {
+            const value = subjectInput.value.trim();
+            if (!value) {
+              showFieldError('emailsubject', 'Subject is required');
+              return false;
+            }
+            if (value.length > 200) {
+              showFieldError('emailsubject', 'Subject must be less than 200 characters');
+              return false;
+            }
+            clearFieldError('emailsubject');
+            return true;
+          }
+          
+          function validateMessage() {
+            const value = messageInput.value.trim();
+            if (!value) {
+              showFieldError('message', 'Message is required');
+              return false;
+            }
+            if (value.length < 10) {
+              showFieldError('message', 'Message must be at least 10 characters');
+              return false;
+            }
+            if (value.length > 2000) {
+              showFieldError('message', 'Message must be less than 2000 characters');
+              return false;
+            }
+            clearFieldError('message');
+            return true;
+          }
+          
+          function showFieldError(fieldId, message) {
+            const input = document.getElementById(fieldId);
+            const errorElement = document.getElementById(fieldId + '-error');
+            if (input) {
+              input.classList.add('error');
+            }
+            if (errorElement) {
+              errorElement.textContent = message;
+              errorElement.style.display = 'block';
+            }
+          }
+          
+          function clearFieldError(fieldId) {
+            const input = document.getElementById(fieldId);
+            const errorElement = document.getElementById(fieldId + '-error');
+            if (input) {
+              input.classList.remove('error');
+            }
+            if (errorElement) {
+              errorElement.textContent = '';
+              errorElement.style.display = 'none';
+            }
+          }
+          
+          function showFormError(message) {
+            if (formError) {
+              formError.textContent = message;
+              formError.style.display = 'block';
+              formError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+          }
+          
+          function clearFormError() {
+            if (formError) {
+              formError.textContent = '';
+              formError.style.display = 'none';
+            }
+          }
+          
+          function validateForm() {
+            clearFormError();
+            const isValid = 
+              validateFullName() &&
+              validateEmail() &&
+              validatePhone() &&
+              validateSubject() &&
+              validateMessage();
+            
+            if (!isValid) {
+              showFormError('⚠️ Please fix the errors above before submitting.');
+              // Scroll to first error
+              const firstError = contactForm.querySelector('.error');
+              if (firstError) {
+                firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                firstError.focus();
+              }
+            }
+            
+            return isValid;
+          }
+          
+          // Form submission handler
+          contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (isContactSubmitting) {
+              return;
+            }
+            
+            // Validate form fields first
+            if (!validateForm()) {
+              return;
+            }
+            
+            // Check if Turnstile token is present (optional check for static site)
+            // For GitHub Pages, we'll allow submission even without token
+            // FormSubmit.co will handle basic spam protection
+            if (!contactChallengeToken) {
+              console.warn('Turnstile token not present, but allowing submission for static site');
+            }
+            
+            // Submit the form
+            isContactSubmitting = true;
+            contactSubmitBtn.disabled = true;
+            contactSubmitBtn.value = 'Sending...';
+            
+            // Submit form (Turnstile token will be included if present)
+            contactForm.submit();
+          });
+        }
+      })();
+    </script>
   </body>
 </html>

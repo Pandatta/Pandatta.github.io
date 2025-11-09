@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Personal Portfolio Website Design | Hong-Ta</title>
+    <title>Message Sent Successfully | Hong-Ta</title>
 
     <!-- box icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -12,201 +12,193 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+      /* Ensure body has dark background */
+      body {
+        background: #323946 !important;
+        color: #fff !important;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Success page specific styles */
+      .success-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--second-bg-color, #323946);
+        padding: clamp(2rem, 5vw, 4rem);
+        text-align: center;
+        position: relative;
+      }
 
-    
+      .success-page::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 50% 50%, rgba(0, 238, 255, 0.05) 0%, transparent 70%);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .success-content {
+        position: relative;
+        z-index: 1;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .success-icon {
+        font-size: clamp(6rem, 12vw, 8rem);
+        color: var(--main-color);
+        margin-bottom: clamp(2rem, 4vw, 3rem);
+        animation: scaleIn 0.6s ease-out;
+      }
+
+      @keyframes scaleIn {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .success-message h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: clamp(1rem, 2vw, 1.5rem);
+        line-height: 1.2;
+      }
+
+      .success-message h2 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        font-weight: 600;
+        color: var(--main-color);
+        margin-bottom: clamp(1.5rem, 3vw, 2rem);
+      }
+
+      .success-message p {
+        font-size: clamp(1.4rem, 3vw, 1.8rem);
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+        margin-bottom: clamp(2rem, 4vw, 3rem);
+      }
+
+      .success-social {
+        display: flex;
+        justify-content: center;
+        gap: clamp(1.5rem, 3vw, 2rem);
+        margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+        flex-wrap: wrap;
+      }
+
+      .success-social a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: clamp(50px, 8vw, 60px);
+        height: clamp(50px, 8vw, 60px);
+        background: var(--second-bg-color);
+        color: var(--text-color);
+        border-radius: 50%;
+        font-size: clamp(2rem, 4vw, 2.5rem);
+        border: 2px solid rgba(0, 238, 255, 0.3);
+        transition: all var(--transition);
+        text-decoration: none;
+      }
+
+      .success-social a:hover {
+        background: var(--main-color);
+        color: var(--bg-color);
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 8px 20px rgba(0, 238, 255, 0.4);
+        border-color: var(--main-color);
+      }
+
+      .success-social a.linkedin:hover {
+        background: #0077b5;
+        border-color: #0077b5;
+      }
+
+      .success-social a.github:hover {
+        background: #333;
+        border-color: #333;
+      }
+
+      .back-button {
+        display: inline-block;
+        padding: clamp(1.2rem, 2.5vw, 1.5rem) clamp(3rem, 6vw, 4rem);
+        background: var(--main-color);
+        color: var(--bg-color);
+        border-radius: var(--radius);
+        font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+        font-weight: 600;
+        text-decoration: none;
+        transition: all var(--transition);
+        border: 2px solid var(--main-color);
+        box-shadow: 0 4px 15px rgba(0, 238, 255, 0.3);
+      }
+
+      .back-button:hover {
+        background: transparent;
+        color: var(--main-color);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 238, 255, 0.5);
+      }
+
+      .back-button:active {
+        transform: translateY(-1px);
+      }
+    </style>
   </head>
 
   <body>
-    <header class = "header">
-      <a href = "#" class = "logo">Ta.</a>
-
-      <i class='bx bx-menu' id = "menu-icon" ></i>
-
-      <nav class = "navbar">
-        <a href = "#home" class="active">Home</a>
-        <a href = "#about">About</a>
-        <a href = "#skills">Skills</a>
-        <a href = "#portfolio">Portfolio</a>
-        <a href = "#contact">Contact</a>
-      </nav>
-    </header>
-
-
-    <!-- home section design -->
-    <section class ="home" id = "home">
-      <div class = "home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Hong Ta Chen</h1>
-        <h3>And I am a <span class = "multiple-text"></span></h3>
-        <p>The person who loves to contribute his hard-working and telligence to AI, ML and Automation industries!</p>
-        <div class = "social-media">
-          <a href="https://www.facebook.com/profile.php?id=100009517090512"><i class='bx bxl-facebook' ></i></a>
-          <a href="https://www.instagram.com/99_ta_oo/"><i class='bx bxl-instagram' ></i></box-icon></a>
-          <a href="https://www.linkedin.com/in/hong-ta-chen-2b02ba296/"><i class='bx bxl-linkedin' ></i></box-icon></a>
-          <a href="https://github.com/Pandatta"><i class='bx bxl-github' ></i></box-icon></a>
+    <div class="success-page">
+      <div class="success-content">
+        <div class="success-icon">
+          <i class='bx bx-check-circle'></i>
         </div>
-        <a href = "https://drive.google.com/file/d/1osUqDFHxVLtVqBHmezPKinr2x0WhE-jn/view?usp=sharing" class = "btn">Download Cv/Resume</a>
-      </div>
-
-      <div class="home-img">
-        <img src="images/home.png" alt="">
-      </div>
-
-    </section>
-
-    <!-- about section design -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/about.png" alt="">
-      </div>
-
-      <div class="about-content">
-        <h2 class="heading">About<span> Me</span></h2>
-        <h3>UW Student!!</h3>
-        <p>The person who loves to contribute his hard-working 
-          and telligence to AI, ML and Automation industries!</p>
-        <a href="#portfolio" class="btn">My Projects</a>
-      </div>
-    </section>
-
-    <!-- services section design -->
-
-    <section class="skills" id="skills">
-        <h2 class="heading">Personal <span>Skills</span></h2>
-
-        <div class="skills-container">
-          <div class="skills-box">
-            <i class='bx bxl-python' ></i>
-            <h3>Python</h3>
-            <p>An expertise in Python with 3+ years of experience,
-               specializing in applying mathematical principles to coding.
-                With a Bachelor's in Mathematics from the University of Waterloo, 
-                I have led projects like real-time stock market analysis
-                with big data and developed an environmental Air Quality Indexing Website.</p>
-                
-            <a href="https://research.ibm.com/haifa/ponderthis/challenges/May2022.html" class="btn">Ibm Challenge I solved!!</a>
-            <a href="https://drive.google.com/file/d/1Hgaym0rOXe3rKHaUUpqq_wLQwNo4P_gX/view?usp=sharing" class="btn">Pcep Certification!!</a>
-            
-           </div>
-           
-           <div class="skills-box">
-            <i class='bx bxl-javascript' ></i>
-            <h3>Java Script</h3>
-            <p>An expertise in Java with 3+ years of experience,
-               specializing in applying mathematical principles to coding.
-                With a Bachelor's in Mathematics from the University of Waterloo, I have led projects like real-time stock market analysis with big data and developed an environmental Air Quality Indexing Website.</p>
-            <a href="#" class="btn">Read More</a>
-           </div>
-
-           <div class="skills-box">
-            <i class='bx bxl-html5' ></i>
-            <h3>CSS</h3>
-            <p>An expertise in Java with 3+ years of experience,
-               specializing in applying mathematical principles to coding.
-                With a Bachelor's in Mathematics from the University of Waterloo, I have led projects like real-time stock market analysis with big data and developed an environmental Air Quality Indexing Website.</p>
-            <a href="#" class="btn">Read More</a>
-           </div>
+        
+        <div class="success-message">
+          <h1>Message Sent!</h1>
+          <h2>Thank You</h2>
+          <p>I've received your message and will get back to you as soon as possible. Looking forward to connecting with you!</p>
         </div>
-    </section>
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfolio-container">
 
-          <div class="portfolio-box">
-            <img src="images/portfolio1.jpg" alt="">
-            <div class="portfolio-layer">
-              <h4>Web Design</h4>
-              <p>I have finished a fantastic responsive personal website, and
-                I learned a lot during making website.
-              </p>
-              <a href="#"><i class='bx bx-link-external' ></i></a>
-            </div>
-          </div>
-
-          <div class="portfolio-box">
-            <img src="images/portfolio2.jpg" alt="">
-            <div class="portfolio-layer">
-              <h4>Real-Time Stock Analysis 
-                with Kafka</h4>
-              <p>Executed a comprehensive End-To-End Data Engineering Project focused on Real-Time Stock Market Data
-                , leveraging technologies like Python, AWS, Apache Kafka, Glue, Athena, and SQL. 
-              </p>
-              <a href="https://github.com/Pandatta/ta-stock-project"><i class='bx bx-link-external' ></i></a>
-            </div>
-          </div>
-
-          <div class="portfolio-box">
-            <img src="images/portfolio3.jpg" alt="">
-            <div class="portfolio-layer">
-              <h4>Voice Assistance With PYTHON</h4>
-              <p>Expert in Python-based automation and virtual assistant development
-                , showcased by creating a desktop assistant with features like real-time date and time updates, YouTube video playback, and Wikipedia searches.
-              </p>
-              <a href="https://github.com/Pandatta/VoiceAssistancewith-PY"><i class='bx bx-link-external' ></i></a>
-            </div>
-          </div>
-          <!--
-          <div class="portfolio-box">
-            <img src="images/portfolio4.jpg" alt="">
-            <div class="portfolio-layer">
-              <h4>Web Design</h4>
-              <p>I have finished a fantastic responsive personal website, and
-                I learned a lot during making website.
-              </p>
-              <a href="#"><i class='bx bx-link-external' ></i></a>
-            </div>
-          </div>
-
-          <div class="portfolio-box">
-            <img src="images/portfolio5.jpg" alt="">
-            <div class="portfolio-layer">
-              <h4>Web Design</h4>
-              <p>I have finished a fantastic responsive personal website, and
-                I learned a lot during making website.
-              </p>
-              <a href="#"><i class='bx bx-link-external' ></i></a>
-            </div>
-          </div>
-
-          <div class="portfolio-box">
-            <img src="images/portfolio6.jpg" alt="">
-            <div class="portfolio-layer">
-              <h4>Web Design</h4>
-              <p>I have finished a fantastic responsive personal website, and
-                I learned a lot during making website.
-              </p>
-              <a href="#"><i class='bx bx-link-external' ></i></a>
-            </div>
-          </div>
-        -->
+        <div class="success-social">
+          <a href="https://www.linkedin.com/in/hong-ta-chen-2b02ba296/" 
+             class="linkedin" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             aria-label="LinkedIn Profile">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="https://github.com/Pandatta" 
+             class="github" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             aria-label="GitHub Profile">
+            <i class='bx bxl-github'></i>
+          </a>
         </div>
-    </section>
-    <!-- contact section design -->
-    <!-- <section class="contact" id="contact">
-      <h2 class="heading">Contact/Hire <span>Ta!</span></h2>
-      <p>Success! I will get back to you soon.</p>
-      <a href = "https://pandatta.github.io/Personal_Web/">Send Again!</a>
-    </section> -->
-    
-    <!-- footer design -->
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2024 by Ta | All Rights Reserved.</p>
+
+        <a href="/" class="back-button">
+          <i class='bx bx-arrow-back' style="margin-right: 0.5rem; vertical-align: middle;"></i>
+          Back to Portfolio
+        </a>
       </div>
-
-      <div class="footer-iconTop">
-        <a href="#home"><i class='bx bxs-up-arrow-circle' ></i></a>
-      </div>
-    </footer>
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-     <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>  
+    </div>
   </body>
 </html>
