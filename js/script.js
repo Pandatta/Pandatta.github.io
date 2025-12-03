@@ -69,7 +69,10 @@ function initScrollTracking() {
             // set offset for sec (can subtract any number)
             //  but i found 300 is the best to avoid
             //  delay of changing the active icon
-            let sec_offset = sec.offsetTop - 300;
+            // Adjust offset for mobile devices
+            const isMobile = window.innerWidth <= 768;
+            const offsetValue = isMobile ? 150 : 300;
+            let sec_offset = sec.offsetTop - offsetValue;
             // pixels that represented height of each sec
             let each_sec_height = sec.offsetHeight;
             // id that represented them in HTML
@@ -126,11 +129,16 @@ function initScrollTracking() {
 // Wait for ScrollReveal to load
 function initScrollReveal() {
     if (typeof ScrollReveal !== 'undefined') {
+        // Check if device is mobile
+        const isMobile = window.innerWidth <= 768;
+        
         ScrollReveal({
-            reset: true,
-            distance: '80px',
+            // Disable reset on mobile to ensure content stays visible once revealed
+            // This fixes the issue where contact form might not appear or disappear unexpectedly
+            reset: !isMobile, 
+            distance: isMobile ? '30px' : '80px', // Reduced distance for mobile
             duration: 2000,
-            delay: 450
+            delay: isMobile ? 200 : 450 // Reduced delay for mobile
         });
 
         ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
